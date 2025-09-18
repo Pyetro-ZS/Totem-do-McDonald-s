@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0" />
+  <title>Funko Surpresa</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="public/mcdonalds-logo-0.png" type="image/x-icon">
+</head>
+<body>
+  <div class="frame">
+    <img src="public/mcdonalds-logo-4-1.png" alt="McDonald's Logo" class="site-logo" />
+    <div class="container funko-screen">
+      <h1 class="titulo">🎁 Surpresa Especial!</h1>
+      <p class="mensagem">Você ganhou um Funko colecionável exclusivo!</p>
+
+      <div class="funko-box" id="funko-box">
+        <div class="lid"></div>
+        <div class="base"></div>
+        <p class="hint">Toque para abrir 🎉</p>
+      </div>
+
+      <div id="funko-result" class="hidden">
+        <img id="funko-img" src="" alt="Funko" class="funko-img">
+        <h2 id="funko-rarity"></h2>
+        <p id="funko-bonus"></p>
+        <button class="btn-avancar" id="funko-apply">Ir para Pagamento</button>
+      </div>
+    </div>
+    <img src="public/element.png" alt="" class="final-element" />
+    <div style="text-align:center; margin-top:18px;">
+          <button class="btn btn-ghost" onclick="location.href='menu.html'">Voltar ao Menu</button>
+        </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

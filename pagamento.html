@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="shortcut icon" href="public/mcdonalds-logo-0.png" type="image/x-icon">
+  <title>Pagamento</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <div class="app-root">
+    <div class="frame">
+      <img src="public/mcdonalds-logo-4-1.png" alt="McDonald's" class="site-logo" />
+
+      <main class="container">
+        <h1 class="titulo">Pagamento</h1>
+        <p class="mensagem">Confira as personalizações dos itens e finalize o pagamento.</p>
+
+        <div class="confirmacao-container" id="pagamento-panel">
+          <div id="pagamento-items">
+          </div>
+
+          <div style="margin-top:12px; display:flex; justify-content:space-between; align-items:center;">
+            <div>Total: <strong id="pagamento-total">R$ 0,00</strong></div>
+            <div style="display:flex;gap:12px">
+              <button class="btn" id="btn-pay-pix">PIX</button>
+              <button class="btn" id="btn-pay-card">Cartão</button>
+              <button class="btn btn-ghost" id="btn-pay-cash">Dinheiro</button>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:18px;">
+          <button class="btn btn-ghost" onclick="location.href='menu.html'">Voltar ao Menu</button>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

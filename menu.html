@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1080, height=1920, initial-scale=1.0" />
+  <title>Menu Interativo</title>
+  <link rel="stylesheet" href="style.css" />
+<link rel="shortcut icon" href="public/mcdonalds-logo-0.png" type="image/x-icon"></head>
+<body>
+  <div class="frame">
+    <img src="public/mcdonalds-logo-4-1.png" alt="McDonald's Logo" class="site-logo" />
+    <div class="container">
+      <div class="menu-area">
+        <div class="menu-left">
+          <div class="menu-wheel" id="menu-wheel" tabindex="0">
+            <div class="menu-card" data-target="lanches">
+              <img src="public/icone-lanche.png" alt="Lanches" />
+              <span>Lanches</span>
+            </div>
+            <div class="menu-card" data-target="acompanhamentos">
+              <img src="public/icone-acomp.png" alt="Acompanhamentos" />
+              <span>Acompanhamentos</span>
+            </div>
+            <div class="menu-card" data-target="bebidas">
+              <img src="public/icone-bebida.png" alt="Bebidas" />
+              <span>Bebidas</span>
+            </div>
+            <div class="menu-card" data-target="sobremesas">
+              <img src="public/icone-sobremesa.png" alt="Sobremesas" />
+              <span>Sobremesas</span>
+            </div>
+            <div class="menu-card" data-target="combos">
+              <img src="public/icone-combo.png" alt="Combos" />
+              <span>Combos</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-right">
+          <section class="categoria" id="lanches">
+            <h2>Lanches</h2>
+            <div class="itens-grid">
+              <div class="item-card" onclick="selectItem('lanche','Hambúrguer Clássico',18.90,'public/lanche1.png')">
+                <img src="public/lanche1.png" alt="">
+                <p class="nome-item">Hambúrguer Clássico</p>
+                <span>R$ 18,90</span>
+              </div>
+              <div class="item-card" onclick="selectItem('lanche','Cheeseburguer',20.50,'public/lanche2.png')">
+                <img src="public/lanche2.png" alt="">
+                <p class="nome-item">Cheeseburguer</p>
+                <span>R$ 20,50</span>
+              </div>
+              <div class="item-card" onclick="selectItem('lanche','Big Bacon',25.00,'public/lanche3.png')">
+                <img src="public/lanche3.png" alt="">
+                <p class="nome-item">Big Bacon</p>
+                <span>R$ 25,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('lanche','Chicken Burger',22.00,'public/lanche4.png')">
+                <img src="public/lanche4.png" alt="">
+                <p class="nome-item">Chicken Burger</p>
+                <span>R$ 22,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('lanche','Veggie Burger',19.00,'public/lanche5.png')">
+                <img src="public/lanche5.png" alt="">
+                <p class="nome-item">Veggie Burger</p>
+                <span>R$ 19,00</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="categoria" id="acompanhamentos">
+            <h2>Acompanhamentos</h2>
+            <div class="itens-grid">
+              <div class="item-card" onclick="selectItem('acompanhamento','Batata Frita',8.00,'public/acomp1.png')">
+                <img src="public/acomp1.png" alt="">
+                <p class="nome-item">Batata Frita</p>
+                <span>R$ 8,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('acompanhamento','Onion Rings',9.50,'public/acomp2.png')">
+                <img src="public/acomp2.png" alt="">
+                <p class="nome-item">Onion Rings</p>
+                <span>R$ 9,50</span>
+              </div>
+              <div class="item-card" onclick="selectItem('acompanhamento','Salada',7.50,'public/acomp3.png')">
+                <img src="public/acomp3.png" alt="">
+                <p class="nome-item">Salada</p>
+                <span>R$ 7,50</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="categoria" id="bebidas">
+            <h2>Bebidas</h2>
+            <div class="itens-grid">
+              <div class="item-card" onclick="selectItem('bebida','Refrigerante',6.00,'public/bebida1.png')">
+                <img src="public/bebida1.png" alt="">
+                <p class="nome-item">Refrigerante</p>
+                <span>R$ 6,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('bebida','Suco Natural',8.50,'public/bebida2.png')">
+                <img src="public/bebida2.png" alt="">
+                <p class="nome-item">Suco Natural</p>
+                <span>R$ 8,50</span>
+              </div>
+              <div class="item-card" onclick="selectItem('bebida','Água',5.00,'public/bebida3.png')">
+                <img src="public/bebida3.png" alt="">
+                <p class="nome-item">Água</p>
+                <span>R$ 5,00</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="categoria" id="sobremesas">
+            <h2>Sobremesas</h2>
+            <div class="itens-grid">
+              <div class="item-card" onclick="selectItem('sobremesa','Sorvete',7.00,'public/sobremesa1.png')">
+                <img src="public/sobremesa1.png" alt="">
+                <p class="nome-item">Sorvete</p>
+                <span>R$ 7,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('sobremesa','Brownie',9.00,'public/sobremesa2.png')">
+                <img src="public/sobremesa2.png" alt="">
+                <p class="nome-item">Brownie</p>
+                <span>R$ 9,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('sobremesa','Mousse de Chocolate',10.50,'public/sobremesa3.png')">
+                <img src="public/sobremesa3.png" alt="">
+                <p class="nome-item">Mousse de Chocolate</p>
+                <span>R$ 10,50</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="categoria" id="combos">
+            <h2>Combos</h2>
+            <div class="itens-grid">
+              <div class="item-card" onclick="selectItem('combo','Combo 1',30.00,'public/combo1.png')">
+                <img src="public/combo1.png" alt="">
+                <p class="nome-item">Combo 1</p>
+                <span>R$ 30,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('combo','Combo 2',35.00,'public/combo2.png')">
+                <img src="public/combo2.png" alt="">
+                <p class="nome-item">Combo 2</p>
+                <span>R$ 35,00</span>
+              </div>
+              <div class="item-card" onclick="selectItem('combo','Combo 3',38.50,'public/combo3.png')">
+                <img src="public/combo3.png" alt="">
+                <p class="nome-item">Combo 3</p>
+                <span>R$ 38,50</span>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+
+      <div class="resumo-bottom">
+        <ul id="resumo-items"></ul>
+        <div style="display: flex; gap: 20px; align-items: center;">
+          <p>Total: <strong id="menu-total">R$ 0,00</strong></p>
+          <button class="btn-avancar" id="menu-avancar">Avançar</button>
+        </div>
+      </div>
+    </div>
+
+    <img src="public/element.png" alt="" class="final-element" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
